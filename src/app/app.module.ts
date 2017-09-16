@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutPage } from "../pages/about/about";
@@ -15,6 +14,7 @@ import { SkillsPage } from "../pages/skills/skills";
 import { WorkPage } from "../pages/work/work";
 import { ContactPage } from "../pages/contact/contact";
 import { EduPage } from "../pages/edu/edu";
+import { ProjectDetailPage } from "../pages/projectdetail/projectdetail";
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { EduPage } from "../pages/edu/edu";
     EduPage,
     CertiPage,
     SkillsPage,
+    ProjectDetailPage,
 WorkPage,
 ContactPage
 
@@ -44,6 +45,7 @@ ContactPage
     CertiPage,
     SkillsPage,
     WorkPage,
+    ProjectDetailPage,
     ContactPage
 
   ],

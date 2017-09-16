@@ -20,16 +20,9 @@ export class SkillsPage implements OnInit {
  Skills:any;
  ErrorMessage:string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,private _appservice: AppService) {  
-    // this.SkillSet=[
-    //   {title:"Core", skills:'ASP.NET 3.5/4.0/4.5, C#, ASP.NET MVC , Web Api, SharePoint 2013/2010,Office 365'},
-    // {title:"Web Technologies", skills:' Object Oriented Java Script, HTML, XHTML, XML, CSS, JQuery, AJAX, JSON, Angular Js, Bootstrap 3, CSOM, JSOM, Angular 2,TypeScript'},
-    // {title:"Web Services",skills:' SIEBEL, SOAP, REST API'},
-    // {title:"Database",skills:'Database	SQL server 2008/2012, Oracle'},
-    // {title:"Tools",skills:'SharePoint Designer 2010/2013, Nintex Workflow, Visual Studio 2010/2012/2013, Style cop, Re-sharper'},
-    // {title:"Version Control Tool",skills:'SVN,TFS'},
-    // {title:"Bug Tracking Tool",skills:'JIRA,CISM'}
-    // ];  
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private _appservice: AppService) {  
+     
   }
 
   ionViewDidLoad() {

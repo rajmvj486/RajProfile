@@ -10,12 +10,87 @@
 <ion-content padding> 
   <ion-grid style="margin-top:10%"center middle>
     
-    <ion-row *ngFor="let p of Projects">
+    <ion-row>
 
-     <ion-col col-12>
- <button ion-button round primary>
-     Project {{p.id}}
-    </button>
+     <ion-col col-6>
+
+     {{ Project.pname.title }}
+   
+   
+     </ion-col>
+
+     <ion-col col-6>
+
+     {{ Project.pname.value }}
+   
+   
+     </ion-col>
+    </ion-row>
+    
+    <ion-row>
+
+     <ion-col col-6>
+
+     {{ Project.cname.title }}
+   
+   
+     </ion-col>
+
+     <ion-col col-6>
+
+     {{ Project.cname.value }}
+   
+   
+     </ion-col>
+    </ion-row>
+    
+    <ion-row>
+
+     <ion-col col-6>
+
+     {{ Project.oname.title }}
+   
+   
+     </ion-col>
+
+     <ion-col col-6>
+
+     {{ Project.oname.value }}
+   
+   
+     </ion-col>
+    </ion-row>
+  
+    <ion-row>
+
+     <ion-col col-6>
+
+     {{ Project.pdesc.title }}
+   
+   
+     </ion-col>
+
+     <ion-col col-6>
+
+     {{ Project.pdesc.value }}
+   
+   
+     </ion-col>
+
+    </ion-row>
+    <ion-row>
+
+     <ion-col col-6>
+
+     {{ Project.roles.title }}
+   
+   
+     </ion-col>
+
+     <ion-col col-6>
+
+     {{ Project.roles.value }}
+   
    
      </ion-col>
 

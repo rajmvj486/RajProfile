@@ -9,19 +9,20 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class AppService{
     private appSkillUrl =  'https://raw.githubusercontent.com/rajmvj486/RajProfile/master/api/Skill/skills.json'; //'http://localhost:7873/api/Products/';
-   private appProjectUrl = '';
+   private appProjectUrl = 'https://raw.githubusercontent.com/rajmvj486/RajProfile/master/api/Project/projects.json';
     constructor(private _http:Http){
 
     }
 getProject(id: number): Observable<any> {
         return this.getProjects()
-            .map((projects: any[]) => projects.find(p => p.id === id));
+            .map((projects: any[]) => projects.find(p => p.id === id))
+            .do(data =>console.log('All '+JSON.stringify(data)))
+    ._catch(this.handleError);
    }
   
 getProjects(): Observable<any[]>{
    return this._http.get(this.appProjectUrl)
-    .map((response:Response)=> <any[]>response.json())
-      .do(data =>console.log('All '+JSON.stringify(data)))
+    .map((response:Response)=> <any[]>response.json())      
     ._catch(this.handleError);
 
 }

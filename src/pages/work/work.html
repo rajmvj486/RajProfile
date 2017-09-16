@@ -13,10 +13,9 @@
     <ion-row *ngFor="let p of Projects">
 
      <ion-col col-12>
- <button ion-button round primary>
+ <button ion-button round primary (click)="goProjectDetail($event, p)"> 
      Project {{p.id}}
     </button>
-   
      </ion-col>
 
     </ion-row>

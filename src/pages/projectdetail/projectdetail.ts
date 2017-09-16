@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /**
@@ -12,13 +12,20 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-projectdetail',
   templateUrl: 'projectdetail.html',
 })
-export class ProjectDetailPage {
+export class ProjectDetailPage implements OnInit {
+    Project: any[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {  
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProjectDetailPage');
   }
-
+ ngOnInit(){
+      this.Project = this.navParams.data;
+    console.log(this.Project);
+    
+ }    
 }
+
+
