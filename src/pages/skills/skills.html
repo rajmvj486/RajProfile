@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Skills</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<h2>Skills I have Worked On</h2>
+ <ion-grid *ngFor="let e of Skills">
+   <ion-row>
+     <ion-col col-12>
+     <b>{{e.Core}}</b>
+     </ion-col>
+   </ion-row>
+    <ion-row>
+      <ion-col col-12>
+      
+      </ion-col>
+    </ion-row>
+ </ion-grid>
+</ion-content>

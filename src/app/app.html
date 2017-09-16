@@ -1,17 +1,27 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
+   <ion-title></ion-title>
   </ion-header>
+<ion-content class="sideProfile">
+  
+<ion-title style="text-align: center;padding-top:10%">
+    <img [src]="rajUrl" width="" class="custom-avatar"/>
+    <h5>Rajshekhar Pampad</h5>
+    <h6>Consultant at Capgemini</h6>
+    <h6>Bangalore,Karnataka</h6>
+    <h6>India</h6>
+  </ion-title>
+   
+   
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
+  <ion-list padding>
+      <a href="#" class="sideProfile" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <i style="padding-right:2px" class="fa fa-{{p.iconName}} {{p.color}}" aria-hidden="true"></i>
+          {{p.title}}
+      </a>
     </ion-list>
-  </ion-content>
+</ion-content>
+ 
 
 </ion-menu>
 

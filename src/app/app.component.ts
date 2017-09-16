@@ -2,27 +2,39 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { AboutPage } from "../pages/about/about";
+import { CertiPage } from "../pages/certi/certi";
+import { SkillsPage } from "../pages/skills/skills";
+import { WorkPage } from "../pages/work/work";
+import { ContactPage } from "../pages/contact/contact";
+import { EduPage } from "../pages/edu/edu";
+import { AppService } from "../service/app.service";
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[AppService]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  rajUrl:string ="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkIAAAAJDI3NTIxZjRjLWM1ZTEtNDUxNC04YWJlLWQ0NTBmZDc5MjIzNw.jpg";
+  rajTitle:string="Raj";
+  imageWidth:number=200;
+  imageMargin:number=2;
+  rootPage: any = AboutPage;
 
-  rootPage: any = HomePage;
-
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, iconName:string,color:any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'About Me', component: AboutPage, iconName: 'user-circle',color:'faBlack' },
+      { title: 'Education', component: EduPage, iconName:'graduation-cap',color:'faBlack' },
+      { title: 'Certification', component: CertiPage, iconName:'certificate',color:'faOrange'},
+      { title: 'Skills', component: SkillsPage,iconName:'laptop',color:'faBlack' },
+      { title: 'Projects', component: WorkPage,iconName:'suitcase',color:'faBlack' },
+      { title: 'Contact Me', component: ContactPage,iconName:'phone-square',color:'faBlack' }
     ];
 
   }

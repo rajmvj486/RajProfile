@@ -1,0 +1,12 @@
+page-edu {
+
+}
+
+blockquote p:before { 
+    content: open-quote;
+    font-weight: bold;
+} 
+blockquote p:after { 
+    content: close-quote;
+    font-weight: bold;
+}
