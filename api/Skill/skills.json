@@ -1,0 +1,62 @@
+[{
+    "title":"Core",
+    "skill":["ASP.NET 3.5/4.0/4.5", "C#",
+      "ASP.NET MVC",
+      "Web Api",
+      "SharePoint 2013/2010",
+      "Office 365"]
+    },
+    {"title":"Web Technologies",
+    "skill":[
+      "Object Oriented Java Script",
+      "HTML",
+      "XHTML",
+      "XML",
+      "CSS",
+      "JQuery",
+      "AJAX",
+      "JSON",
+      "Angular Js",
+      "Bootstrap 3/4",
+      "CSOM",
+      "JSOM",
+      "Angular 2",
+      "TypeScript"
+    ]},
+   {
+       "title": "Web Services",
+       "skill":[
+      "SIEBEL",
+      "SOAP",
+      "REST API"
+    ]},
+
+    
+   {
+       "title": "Database",
+       "skill": [
+      "SQL server 2008/2012",
+      "Oracle"
+    ]},
+   {
+        "title": "Tools",
+        "skill": [
+      "SharePoint Designer 2010/2013",
+      "Nintex Workflow",
+      "Visual Studio 2010/2012/2013/2015/2017",
+      "Style cop",
+      "Re-sharper"
+    ]},
+    {  "title":"Version Control Tool",
+        "skill":[
+      "SVN",
+      "TFS",
+      "Git"
+    ]},
+    {
+         "title":"Bug Tracking Tool",
+         "skill":[
+      "JIRA",
+      "CISM"
+    ]}
+  ]

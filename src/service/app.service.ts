@@ -8,7 +8,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AppService{
-    private appServiceUrl =  'https://raw.githubusercontent.com/floatinghotpot/cordova-plugin-nativeaudio/master/package.json'; //'http://localhost:7873/api/Products/';
+    private appServiceUrl =  'api/Skill/skills.json'; //'http://localhost:7873/api/Products/';
     constructor(private _http:Http){
 
     }
