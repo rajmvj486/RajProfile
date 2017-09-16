@@ -1,0 +1,71 @@
+[
+    {  
+      "id":"7",
+      "pname":{
+          "title":"Project Name",
+          "value":"Accord & Regulatory Portal"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leading US Bank"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Mphasis Ltd"
+        },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"ACCORD (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+        "Coordination with onsite team & client",
+        "Requirement understanding.",
+        "Creation of Technical Design and Deployment Documents.",
+        "Worked on Creation of Custom Pages",
+        "Worked on event Reciever",
+        "Worked on Customizing the look & feel of the portal",
+        "Worked on Content Editor Web part to render view.",
+        "Developed on certain Development tasks - Timer Jobs, web parts, Custom pages.",
+        "Deployment & Maintenance"
+        ]
+        
+    }
+    
+},
+{  
+      "id":"6",
+      "pname":{
+          "title":"Project Name",
+          "value":"Accord & Regulatory Portal"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leading US Bank"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Mphasis Ltd"
+        },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"ACCORD (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+        "Coordination with onsite team & client",
+        "Requirement understanding.",
+        "Creation of Technical Design and Deployment Documents.",
+        "Worked on Creation of Custom Pages",
+        "Worked on event Reciever",
+        "Worked on Customizing the look & feel of the portal",
+        "Worked on Content Editor Web part to render view.",
+        "Developed on certain Development tasks - Timer Jobs, web parts, Custom pages.",
+        "Deployment & Maintenance"
+        ]
+        
+    }
+    
+}]
