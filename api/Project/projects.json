@@ -1,6 +1,286 @@
 [
     {  
+      "id":"8",
+      "pname":{
+          "title":"Project Name",
+          "value":"Charts for SharePoint - Reusable App"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leaders in Automobile Industry"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Capgemini"
+        },
+        "jname":{
+            "title":"Job Role",
+             "value":"SharePoint Consultant"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"August 2017 - Till Date"
+            },
+            "tname":{
+              "title":"Team Size",
+                "value":"3-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"SharePoint 2013, JavaScript/jQuery, AJAX, JSOM, R-graph, SharePoint Hosted App, TFS, CISM Tool, Agile Methodology"
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"Chart for SharePoint is a SharePoint Hosted app. This is used as an app part in any web part page. This is required for the users to present and analyse their data in a graphical interface. Following are the features:",
+           "subvalue":[
+"Add this app as an app part.",
+"Configurable option to select List and more than one column for x-axis and y-axis",
+"Configurable option to set the options for various graphs like: Bar graph, Line graph,Pie Chart, Doughnut, Radar etc"
+           ]
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+        "Coordination with client",
+        "Requirement Analysis and proposing technical implementation",
+        "Worked on SharePoint Hosted app", 
+	"Worked on Bootstrap 3, HTML5, CSS3, Angular Js",
+    "Worked on JSOM, REST API",
+    "Creating User guide and Video for end User.",
+	"Support and Maintaining using CISM [Bug tracking Tool]",
+	"Knowledge Transfer to other resources"
+
+        ]
+        
+    }
+    
+},
+{  
       "id":"7",
+      "pname":{
+          "title":"Project Name",
+          "value":"Calendar Year View - Reusable App"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leaders in Automobile Industry"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Capgemini"
+        },
+        "jname":{
+            "title":"Job Role",
+             "value":"SharePoint Consultant"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"September  2016 - Till Date"
+            },
+            "tname":{
+              "title":"Team Size",
+                "value":"4-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"SharePoint 2013, JavaScript/jQuery, AJAX, JSOM, SharePoint Services, SharePoint Hosted App, TFS, CISM Tool, Agile Methodology"
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"A SharePoint Hosted App for SharePoint calendar with a full Year View. This is required for the users to plan their activities for the complete year. Following are the features:",
+           "subvalue":[
+        	 "View all the months in a single page.",
+            "Schedule and Edit events.",
+            "Assign different colours to different categories in a SharePoint Calendar.",
+            "Add and Delete Categories to SharePoint Calendar through app.",
+            "Track all the events for a year in a single view"
+           ]
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+        "Coordination with client",
+        "Requirement Analysis and proposing technical implementation",
+        "Worked on SharePoint Hosted app", 
+	"Worked on Bootstrap 3, HTML5, CSS3.",
+    "Worked on JSOM, REST API",
+    "Creating User guide and Video for end User.",
+	"Support and Maintaining using CISM [Bug tracking Tool]",
+	"Knowledge Transfer to other resources"
+
+        ]
+        
+    }
+    
+},
+{  
+      "id":"6",
+      "pname":{
+          "title":"Project Name",
+          "value":"Council MMS - Reusable App"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leaders in Automobile Industry"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Capgemini"
+        },
+        "jname":{
+            "title":"Job Role",
+             "value":"SharePoint Consultant"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"September  2016 - Till Date"
+            },
+            "tname":{
+              "title":"Team Size",
+                "value":"4-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"SharePoint 2013, SharePoint Designer 2013, SharePoint Designer Workflow, JavaScript/jQuery, Services, Provided Hosted App, TFS, CISM Tool"
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"Council MMS is a meeting management app which helps users to manage their meetings starting from creating a meeting to minute’s generation at a single place. Council MMS is a  provider hosted app which needs to be added to a sub site in a SharePoint site collection by a site owner. Major Features of this meeting management include –",
+           "subvalue":[        	
+"Creation of meetings",
+"Detailing agenda for meetings.",
+"Topic Management",
+"Guests, Speakers & Presenters Management",
+"Generation of Minutes of Meeting",
+"Task tracking"
+           ]
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+       "Coordination with Client.",
+"Requirement Analysis and proposing technical implementation.",
+"Worked on Provided Hosted App.",
+"Worked on Remote Event Receiver, Custom Content type, Site Column, List and Library",
+"Worked on CSOM, JSOM, REST API.",
+"Creating User guide and Video for end User.",
+"Support and Maintaining using CISM [Bug tracking Tool].",
+"Knowledge Transfer to other resources."
+
+        ]
+        
+    }
+    
+},
+
+{  
+      "id":"5",
+      "pname":{
+          "title":"Project Name",
+          "value":"Tooling App"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leaders in Automobile Industry"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Capgemini"
+        },
+        "jname":{
+            "title":"Job Role",
+             "value":"SharePoint Consultant"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"July 2016 – August 2016"
+            },
+            "tname":{
+              "title":"Team Size",
+                "value":"2-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"SharePoint 2013, SharePoint Designer 2013, Nintex Workflow, JavaScript/jQuery, REST, SPServices"
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"Automate the flow of Approval Process for the Supplier, placing an order of Goods."          
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+       "Coordination with Client.",
+"Requirement Analysis and proposing technical implementation.",
+"Worked on Nintex Workflow",
+"Worked on Complex flow design with Role Based filtration of Custom Form View.",
+"Worked on Custom Edit, View and Task Forms",
+"Worked on JSOM, REST API.",
+"Knowledge Transfer to other resources."
+
+        ]
+        
+    }
+    
+},
+{  
+      "id":"4",
+      "pname":{
+          "title":"Project Name",
+          "value":"Asharqia SharePoint Portal"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"Asharqia Chambers"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Aufait Technologies Pvt. Ltd."
+        },
+        "jname":{
+            "title":"Job Role",
+             "value":"Software Engineer"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"November 2015 – June 2016"
+            },
+            "tname":{
+              "title":"Team Size",
+                "value":"5-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"C#, Net 3.5/4.0, Visual Studio 2013, SharePoint 2013, SharePoint Designer 2013, Siebel"
+
+            },
+            "wname":{
+                "title":"Website",
+                "value":"https://www.chamber.org.sa/"
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"Migration of both Arabic and English websites for Asharqia chambers from MS SharePoint 2010 to MS SharePoint 2013"          
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+                     "Coordination with onsite team & Client.",
+"Requirement Analysis and proposing technical implementation.",
+"Worked on Siebel Web Service Integration with SharePoint 2013.",
+"Worked on Creating Dashboard.",
+"Worked on Custom solutions for Dynamic Sub-Site Creation.",
+"Worked on JSOM, REST API and Branding of the site.",
+"Worked on Creating Page Layouts, Static Page for both Arabic and English Site.",
+"Production Deployment of Latest Solution using PowerShell Script.",
+"Creation of Technical Design document."
+        ]
+        
+    }
+    
+},
+    {  
+      "id":"3",
       "pname":{
           "title":"Project Name",
           "value":"Accord & Regulatory Portal"
@@ -13,9 +293,27 @@
              "title": "Organization Name",
            "value":"Mphasis Ltd"
         },
+        
+        "jname":{
+            "title":"Job Role",
+             "value":"Associate Software Engineer"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"November 2014 – October 2015"
+            },  
+            "tname":{
+              "title":"Team Size",
+                "value":"12-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"C#, Net 3.5/4.0, Visual Studio 2010, SharePoint 2010, SQL Server 2008"
+
+            },
         "pdesc":{
               "title": "Project Description",
-           "value":"ACCORD (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
+           "value":"<b>ACCORD</b> (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.<b>Regulatory Portal</b> is metadata and document management portal for the regulatory coordinators and the senior management teams."
         },
         "roles":{
                 "title": "Roles and Responsibilities",
@@ -24,7 +322,7 @@
         "Requirement understanding.",
         "Creation of Technical Design and Deployment Documents.",
         "Worked on Creation of Custom Pages",
-        "Worked on event Reciever",
+        "Worked on Event Reciever",
         "Worked on Customizing the look & feel of the portal",
         "Worked on Content Editor Web part to render view.",
         "Developed on certain Development tasks - Timer Jobs, web parts, Custom pages.",
@@ -35,10 +333,10 @@
     
 },
 {  
-      "id":"6",
+      "id":"2",
       "pname":{
           "title":"Project Name",
-          "value":"Accord & Regulatory Portal"
+          "value":"IB GCRM Skills Academy TM"
       },
         "cname":{
            "title":"Client Name",
@@ -48,22 +346,87 @@
              "title": "Organization Name",
            "value":"Mphasis Ltd"
         },
+        
+        "jname":{
+            "title":"Job Role",
+             "value":"Associate Software Engineer"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"June 2014 – Nov 2014"
+            },  
+            "tname":{
+              "title":"Team Size",
+                "value":"5-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"C#, Net 3.5/4.0, Visual Studio 2010, SharePoint 2010, SQL Server 2008, Ajax, MS Chart "
+
+            },
         "pdesc":{
               "title": "Project Description",
-           "value":"ACCORD (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
+           "value":"A training Portal Designed for the training and operation division of the Bank. The portal allowed 16k user to view training plan and complete the training assigned to them. The development of intranet site involved creating a custom site definition with Master Page, custom application Pages, Complex features such as Multi-level grids, and nightly SQL jobs to import the training data from Oracle Database and Timer Jobs to update the SharePoint List. SSIS is used to sync data in staging SQL DB with Backend Oracle Databases. Full Rights were provided to administrator to fine tune the training being displayed to the user and the way they are categorized"
         },
         "roles":{
                 "title": "Roles and Responsibilities",
                  "value":[
-        "Coordination with onsite team & client",
-        "Requirement understanding.",
-        "Creation of Technical Design and Deployment Documents.",
-        "Worked on Creation of Custom Pages",
-        "Worked on event Reciever",
-        "Worked on Customizing the look & feel of the portal",
-        "Worked on Content Editor Web part to render view.",
-        "Developed on certain Development tasks - Timer Jobs, web parts, Custom pages.",
-        "Deployment & Maintenance"
+ "Involved in requirement analysis, Design and coding of assigned module.",
+"Designing and solving technical and functional queries of the team.",
+"Customizing Web Parts, Page Layout, UI Branding, Lists and libraries.",
+"Customizing jQuery Chart plugin and MS chart.",
+"Involved in unit testing, bug fixing of these applications."
+
+        ]
+        
+    }
+},
+    {
+    
+      "id":"1",
+      "pname":{
+          "title":"Project Name",
+          "value":"New Business Initiative Association (NBIA)"
+      },
+        "cname":{
+           "title":"Client Name",
+           "value":"One of the Leading US Bank"
+        },
+        "oname":{
+             "title": "Organization Name",
+           "value":"Mphasis Ltd"
+        },
+        
+        "jname":{
+            "title":"Job Role",
+             "value":"Associate Software Engineer"
+        },
+            "dname":{
+                "title":"Duration",
+                "value":"June 2014 – Nov 2014"
+            },  
+            "tname":{
+              "title":"Team Size",
+                "value":"5-member Team"  
+            },
+            "ename":{
+                "title":"Environment",
+                "value":"C#, Net 3.5/4.0, Visual Studio 2010, SharePoint 2010, SQL Server 2008, Ajax "
+
+            },
+        "pdesc":{
+              "title": "Project Description",
+           "value":"AM NBIA is SharePoint 2010 based application to create new business initiative for submitting “NBIA” easier and faster. It creates allow and managing the approval status or new business initiative as per the policy defined for the AM new business initiative approval from the client. Application tracks the NBIA from start to end various notifications at different status of NBIA. There are various views to show data used for analysis. There are Timer jobs which reminds notifications. Application has main site and a subsite. Application has also provision to do approvals by email. The project started off as a MOSS 2007 implementation but was later migrated to SharePoint 2010."
+        },
+        "roles":{
+                "title": "Roles and Responsibilities",
+                 "value":[
+ "Involved in analysis, Design and Development of assigned module.",
+"Designing and solving technical and functional queries of the team.",
+"Customizing out of the Box features of SharePoint list and document library.",
+"Involved in unit testing, bug fixing, and SIT/UAT deployment of these applications.",
+"Supporting Testing team to understand functionalities during regression testing.",
+"Creation of Technical Design, Deployment Documents."
         ]
         
     }

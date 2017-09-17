@@ -1,13 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button >
-     
-    </button>
-    <ion-title>Projects</ion-title>
+    <ion-title>Project {{Project.id}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding> 
+
+  <h5>{{Project.pname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.pname.value }}
+  </ion-card-content>
+
+</ion-card>
   <ion-grid style="margin-top:10%"center middle>
     
     <ion-row>
