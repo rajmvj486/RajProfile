@@ -14,97 +14,74 @@
   </ion-card-content>
 
 </ion-card>
-  <ion-grid style="margin-top:10%"center middle>
-    
-    <ion-row>
+  <h5>{{Project.cname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.cname.value }}
+  </ion-card-content>
 
-     <ion-col col-6>
+</ion-card>
 
-     {{ Project.pname.title }}
-   
-   
-     </ion-col>
+  <h5>{{Project.oname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.oname.value }}
+  </ion-card-content>
 
-     <ion-col col-6>
+</ion-card>
 
-     {{ Project.pname.value }}
-   
-   
-     </ion-col>
-    </ion-row>
-    
-    <ion-row>
+<h5>{{Project.jname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.jname.value }}
+  </ion-card-content>
 
-     <ion-col col-6>
+</ion-card>
+<h5>{{Project.dname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.dname.value }}
+  </ion-card-content>
 
-     {{ Project.cname.title }}
-   
-   
-     </ion-col>
+</ion-card>
 
-     <ion-col col-6>
+<h5>{{Project.tname.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.tname.value }}
+  </ion-card-content>
 
-     {{ Project.cname.value }}
-   
-   
-     </ion-col>
-    </ion-row>
-    
-    <ion-row>
+</ion-card>
 
-     <ion-col col-6>
+<h5>{{Project.ename.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.ename.value }}
+  </ion-card-content>
 
-     {{ Project.oname.title }}
-   
-   
-     </ion-col>
-
-     <ion-col col-6>
-
-     {{ Project.oname.value }}
-   
-   
-     </ion-col>
-    </ion-row>
-  
-    <ion-row>
-
-     <ion-col col-6>
-
-     {{ Project.pdesc.title }}
-   
-   
-     </ion-col>
-
-     <ion-col col-6>
-
-     {{ Project.pdesc.value }}
-   
-   
-     </ion-col>
-
-    </ion-row>
-    <ion-row>
-
-     <ion-col col-6>
-
-     {{ Project.roles.title }}
-   
-   
-     </ion-col>
-
-     <ion-col col-6>
-
-     {{ Project.roles.value }}
-   
-   
-     </ion-col>
-
-    </ion-row>
-  
-
-  </ion-grid>
+</ion-card>
 
 
+<h5>{{Project.pdesc.title}}</h5>
+    <ion-card>
+  <ion-card-content>
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+   {{ Project.pdesc.value }}
+  </ion-card-content>
 
+</ion-card>
+
+<h5>{{Project.roles.title}}</h5>
+    <ion-card>
+  <ion-card-content *ngFor="let p of Project.roles.value">
+   <ion-icon style="padding-right:10px" name="star"></ion-icon>
+   {{ p }}
+  </ion-card-content>
+</ion-card>
 </ion-content>
