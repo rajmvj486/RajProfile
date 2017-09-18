@@ -9,6 +9,7 @@ import { WorkPage } from "../pages/work/work";
 import { ContactPage } from "../pages/contact/contact";
 import { EduPage } from "../pages/edu/edu";
 import { AppService } from "../service/app.service";
+import { WelcomePage } from "../pages/welcome/welcome";
 
 @Component({
   templateUrl: 'app.html',
@@ -20,7 +21,7 @@ export class MyApp {
   rajTitle:string="Raj";
   imageWidth:number=200;
   imageMargin:number=2;
-  rootPage: any = AboutPage;
+  rootPage: any = WelcomePage;
 
   pages: Array<{title: string, component: any, iconName:string,color:any}>;
 

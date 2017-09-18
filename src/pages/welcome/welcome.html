@@ -1,0 +1,25 @@
+
+  
+    
+  
+
+<ion-content no-bounce>
+  <!-- <ion-buttons end *ngIf="showSkip">
+      <button ion-button clear (click)="startApp()"  color="danger">Skip</button>
+    </ion-buttons> -->
+  <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)">
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" style="border-radius:20%" class="slide-image" />
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/images/raj.png" class="slide-image" />
+      <h2 class="slide-title">Ready to Explore My Profile</h2>
+      <button ion-button icon-end large clear (click)="startApp()" color="danger">
+       Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

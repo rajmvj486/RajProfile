@@ -15,6 +15,8 @@ import { WorkPage } from "../pages/work/work";
 import { ContactPage } from "../pages/contact/contact";
 import { EduPage } from "../pages/edu/edu";
 import { ProjectDetailPage } from "../pages/projectdetail/projectdetail";
+import { ProsummaryPage } from "../pages/prosummary/prosummary";
+import { WelcomePage } from "../pages/welcome/welcome";
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProjectDetailPage } from "../pages/projectdetail/projectdetail";
     EduPage,
     CertiPage,
     SkillsPage,
+    WelcomePage,
+    ProsummaryPage,
     ProjectDetailPage,
 WorkPage,
 ContactPage
@@ -42,9 +46,11 @@ ContactPage
     ListPage,
     AboutPage,
     EduPage,
+    WelcomePage,
     CertiPage,
     SkillsPage,
     WorkPage,
+    ProsummaryPage,
     ProjectDetailPage,
     ContactPage
 

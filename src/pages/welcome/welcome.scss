@@ -1,0 +1,45 @@
+page-welcome {
+ .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .slide-zoom {
+    height: 100%;
+    background: linear-gradient(to bottom right, #7f13cf, rgba(0, 255, 221, 0.79)) !important;
+  }
+
+  .slide-title {
+    margin-top: 2.8rem;
+  }
+
+  .slide-image {
+    max-height: 40%;
+    max-width: 60%;
+    margin-top: 135px;
+  }
+
+  b {
+    font-weight: 500;
+  }
+ h2{
+     color:white;
+ }
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    bottom: 100px;
+}
+    .scroll-content{        
+        background:linear-gradient(to bottom right, #7f13cf, rgba(0, 255, 221, 0.79)) !important;
+    }
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+
+    b {
+      color: #000000;
+    }
+  }
+
+}
