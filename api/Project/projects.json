@@ -309,11 +309,10 @@
             "ename":{
                 "title":"Environment",
                 "value":"C#, Net 3.5/4.0, Visual Studio 2010, SharePoint 2010, SQL Server 2008"
-
             },
         "pdesc":{
               "title": "Project Description",
-           "value":"ACCORD (Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses.Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
+           "value":"ACCORD(Approach to Centralized Coordination of Regulatory Deliverables) is a SharePoint application which helps to streamline/ improve the admin workflow & record keeping associated with requests and responses. Regulatory Portal is metadata and document management portal for the regulatory coordinators and the senior management teams."
         },
         "roles":{
                 "title": "Roles and Responsibilities",
