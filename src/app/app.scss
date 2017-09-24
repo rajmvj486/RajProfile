@@ -21,6 +21,9 @@
 .hide-card {
   -webkit-box-shadow: none!important;
 }
+.sideProfile.item.item-block.item-md {
+    background: transparent;
+}
 
 .custom-avatar {
   height: 30vw;
@@ -32,13 +35,29 @@
   margin-right: auto;
 }
 .sideProfile{
+  
      //   height: 200px;
     //background: red; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left top, red, yellow); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00caff, rgba(24, 255, 0, 0.79)); /* Standard syntax (must be last) */
+    //    background: linear-gradient(to bottom right, #0f75da, rgba(34, 189, 40, 0.79));
+  //    background: linear-gradient(to bottom right, #6b00ff, rgba(255, 84, 0, 0.79)) !important;
+    background:linear-gradient(to bottom right, #00c7ff, rgba(239, 17, 221, 0.79))
+    //background: linear-gradient(to bottom right, #00caff, rgba(239, 17, 17, 0.79)); /* Standard syntax (must be last) */
 }
+  .toolbar-title-md{
+    color: white;
+  }
+  .list-md .item-block .item-inner{
+    border-bottom-style: none;
+  }
+  .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+    color: white;
+  }
+  h1, h2, h3, h4, h5, h6{
+    color:white;
+  }
 .faGreen{
   color:#28a54c;
 }
@@ -58,4 +77,7 @@
 }
 .faBlack{
   color: #000;
+}
+.faWhite{
+  color:#fff;
 }

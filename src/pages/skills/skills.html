@@ -10,16 +10,15 @@
 
 <ion-content padding>
 <h2>Skills I have Worked On</h2>
- <ion-grid *ngFor="let e of SkillSet">
-   <ion-row>
-     <ion-col col-12>
-     <b>{{e.title}}</b>
-     </ion-col>
-   </ion-row>
-    <ion-row>
-      <ion-col col-12>
-      {{e.skill}}
-      </ion-col>
-    </ion-row>
- </ion-grid>
+<ion-card *ngFor="let e of SkillSet">
+       <b>{{e.title}}</b>
+  <ion-card-content>
+    <!-- <ion-card-title>
+     Graduation
+      </ion-card-title> -->
+    <p>
+   <i class="fa fa-shield" aria-hidden="true"></i> {{e.skill}} 
+    </p>
+  </ion-card-content>
+</ion-card>
 </ion-content>

@@ -3,20 +3,18 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>About Me</ion-title>
+<ion-buttons right>
+    <button ion-button icon-only (click)="MovetoNext()">
+      <ion-icon  faWhite name="arrow-forward"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title>Professional Summary</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <h4>A Tech Guy</h4>
-  <button ion-button primary (click)="AudioPlay()">Play</button>
-  <ion-list>
-
-  <ion-item *ngFor="let p of proSummary">
-     <ion-icon style="padding-right:10px" name="cube"></ion-icon>
-   {{p.title}}  
-  </ion-item>
-  </ion-list>
+  
   <ion-card *ngFor="let p of proSummary">
   <ion-card-content>
    <ion-icon style="padding-right:10px" name="cube"></ion-icon>
@@ -24,11 +22,9 @@
   </ion-card-content>
 
 </ion-card>
- <div style="line-height: 1.75em;" *ngFor="let p of proSummary">
-   
-  </div>
+ 
   <!-- Real floating action button, fixed. It will not scroll with the content -->
-  <ion-fab top right edge>
+  <!-- <ion-fab top right edge>
     <button ion-fab mini><ion-icon name="add"></ion-icon></button>
     <ion-fab-list>
       <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
@@ -36,7 +32,7 @@
       <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
       <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
     </ion-fab-list>
-  </ion-fab>
+  </ion-fab> -->
 
   <ion-fab right bottom>
     <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>

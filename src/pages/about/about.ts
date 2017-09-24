@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Media, MediaObject } from '@ionic-native/media';
+
 
 /**
  * Generated class for the AboutPage page.
@@ -17,11 +17,12 @@ import { Media, MediaObject } from '@ionic-native/media';
 
 export class AboutPage {
    //nativePath:string;
- file: MediaObject;
+ rajUrl:string ="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkIAAAAJDI3NTIxZjRjLWM1ZTEtNDUxNC04YWJlLWQ0NTBmZDc5MjIzNw.jpg";
+ 
   proSummary:Array<{title:string}>;
 
   constructor(public navCtrl: NavController,
-     public navParams: NavParams,private media: Media) {
+     public navParams: NavParams) {
     this.proSummary=[
       {title:' Microsoft Certified SharePoint Developer with 4 Years of IT experience in different phases of SDLC including Analysis, Design, Development, Test, Support and Maintenance.'},
       {title:'Good Working knowledge about out of the box features of SharePoint 2013/2010 and hands on experience in customizing them to meet the business need.'},
@@ -39,7 +40,7 @@ export class AboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
-   console.log(Media);
+   
   }
    
 //   MusicPlay(){
@@ -57,16 +58,16 @@ export class AboutPage {
 //   }
    AudioPlay(){
      
-    // this.pathAlone = this.nativePath.substring(8);
-    this.file  = this.media.create('./assets/audio/Audio1.mp3');  
-    this.file.onStatusUpdate.subscribe(status => console.log(status)); // fires when file status changes
+//     // this.pathAlone = this.nativePath.substring(8);
+//     this.file  = this.media.create('./assets/audio/Audio1.mp3');  
+//     this.file.onStatusUpdate.subscribe(status => console.log(status)); // fires when file status changes
 
-    this.file.onSuccess.subscribe(() => console.log('Action is successful'));
+//     this.file.onSuccess.subscribe(() => console.log('Action is successful'));
 
-    this.file.onError.subscribe(error => console.log('Error!', error));
+//     this.file.onError.subscribe(error => console.log('Error!', error));
 
-// play the file
-    this.file.play();
+// // play the file
+//     this.file.play();
 
     
    }

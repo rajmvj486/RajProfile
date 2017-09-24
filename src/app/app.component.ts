@@ -10,6 +10,7 @@ import { ContactPage } from "../pages/contact/contact";
 import { EduPage } from "../pages/edu/edu";
 import { AppService } from "../service/app.service";
 import { WelcomePage } from "../pages/welcome/welcome";
+import { ProsummaryPage } from "../pages/prosummary/prosummary";
 
 @Component({
   templateUrl: 'app.html',
@@ -23,19 +24,20 @@ export class MyApp {
   imageMargin:number=2;
   rootPage: any = WelcomePage;
 
-  pages: Array<{title: string, component: any, iconName:string,color:any}>;
+  pages: Array<{title: string, component: any, iconName:string,color:any,padVal:any}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'About Me', component: AboutPage, iconName: 'user-circle',color:'faBlack' },
-      { title: 'Education', component: EduPage, iconName:'graduation-cap',color:'faBlack' },
-      { title: 'Certification', component: CertiPage, iconName:'certificate',color:'faOrange'},
-      { title: 'Skills', component: SkillsPage,iconName:'laptop',color:'faBlack' },
-      { title: 'Projects', component: WorkPage,iconName:'suitcase',color:'faBlack' },
-      { title: 'Contact Me', component: ContactPage,iconName:'phone-square',color:'faBlack' }
+      { title: 'About Me', component: AboutPage, iconName: 'user-circle',color:'faWhite',padVal:'10px' },
+      { title: 'Professional Overview', component: ProsummaryPage, iconName: 'user-circle',color:'faWhite',padVal:'10px' },
+      { title: 'Education', component: EduPage, iconName:'graduation-cap',color:'faWhite',padVal:'8px' },
+      { title: 'Certification', component: CertiPage, iconName:'certificate',color:'faOrange',padVal:'12px'},
+      { title: 'Skills', component: SkillsPage,iconName:'laptop',color:'faWhite',padVal:'10px' },
+      { title: 'Projects', component: WorkPage,iconName:'suitcase',color:'faWhite',padVal:'10px' },
+      { title: 'Contact Me', component: ContactPage,iconName:'phone-square',color:'faWhite',padVal:'10px' }
     ];
 
   }

@@ -1,12 +1,30 @@
 page-work {
-
+.projdiv{
+    background: linear-gradient(to bottom right, #6b00ff, rgba(255, 84, 0, 0.79));
+    text-align: center;
+    padding-top: 20%;
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
 }
-
 .toolbar-background{
      //background: red; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left top, #00caff,rgba(24, 255, 0, 0.79)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, #00caff,rgba(24, 255, 0, 0.79)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #00caff, rgba(24, 255, 0, 0.79)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #00caff, rgba(24, 255, 0, 0.79)) !important; /* Standard syntax (must be last) */
+ //   background: linear-gradient(to bottom right, #00caff, rgba(24, 255, 0, 0.79)) !important; /* Standard syntax (must be last) */
+ background: linear-gradient(to bottom right, #00caff, rgba(239, 17, 17, 0.79)); /* Standard syntax (must be last) */
+}
+.card-md p{
+    color:white!important;
+}
+ion-card-content.card-content.card-content-md{
+    color:white;
+        background: linear-gradient(to bottom right, #6b00ff, rgba(255, 84, 0, 0.79))
 
+}
+    ion-content.content.content-md {
+        color:white;
+    background: linear-gradient(to bottom right, #00c7ff, rgba(239, 17, 17, 0.79));
+}
 }

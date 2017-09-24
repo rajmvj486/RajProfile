@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AppService } from "../../service/app.service";
 import { ProjectDetailPage } from "../projectdetail/projectdetail";
 
@@ -19,17 +19,29 @@ export class WorkPage implements OnInit{
   ErrorMessage: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-  private _appservice: AppService) {
+  private _appservice: AppService,public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WorkPage');
   }
    ngOnInit(){
+      let loader = this.loadingCtrl.create({
+    content: 'Getting latest Projects...',
+     duration: 3000,
+  });
+
+  loader.present().then(() => {
      this._appservice.getProjects().subscribe(
-       proj=> this.Projects =proj,
+       proj=> {
+         loader.dismiss();
+         this.Projects =proj
+       },
        error=>this.ErrorMessage = error
      )
+    
+  });
+
    }
   goProjectDetail($event, p){
     this.navCtrl.push(ProjectDetailPage,p);

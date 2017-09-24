@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { Media } from '@ionic-native/media';
+import { CallNumber } from '@ionic-native/call-number';
 import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -17,6 +17,7 @@ import { EduPage } from "../pages/edu/edu";
 import { ProjectDetailPage } from "../pages/projectdetail/projectdetail";
 import { ProsummaryPage } from "../pages/prosummary/prosummary";
 import { WelcomePage } from "../pages/welcome/welcome";
+import { Network } from "@ionic-native/network";
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ ContactPage
   providers: [
     StatusBar,
     SplashScreen,
-    Media,
+    CallNumber,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

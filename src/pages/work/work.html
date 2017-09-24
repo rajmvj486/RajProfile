@@ -8,23 +8,17 @@
 </ion-header>
 
 <ion-content padding> 
-  <ion-grid style="margin-top:10%"center middle>
-    <!-- <ion-row *ngFor="let p of Projects">
-     <ion-col col-6>
-        <button ion-button round primary (click)="goProjectDetail($event, p)"> 
-     Project {{p.id}}
-    </button>
-     </ion-col>
-    </ion-row> -->
-  </ion-grid>
-  <ion-list>
-  <ion-item *ngFor="let p of Projects" (click)="goProjectDetail($event, p)">
-    <ion-avatar item-start>
-      <ion-icon name="star"></ion-icon>
-    </ion-avatar>
-    <h2> Project {{p.id}}</h2>
-    <h3>Don't Know What To Do!</h3>
-    <p>I've had a pretty messed up day. If we just...</p>
-  </ion-item>
-</ion-list>
+   <div style="line-height:1em;">
+    <blockquote style="margin:0">
+    <p style="font-style:italic;font-weight: 500;text-align:center">Every project has challenges, and every project has its rewards.</p>
+    <pre style="padding-left:50%;font-size: 12px;"> -Stephen Schwartz</pre>
+</blockquote>
+    </div>
+  <ion-card *ngFor="let p of Projects" (click)="goProjectDetail($event, p)">
+  <ion-card-content style="text-align:center">
+   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
+    <ion-label> Project {{p.id}}<ion-icon style="float:right;color:yellow" name="ios-arrow-forward"></ion-icon></ion-label>
+     <p class="faWhite">{{p.pname.value }}</p>
+  </ion-card-content>
+  </ion-card>
 </ion-content>

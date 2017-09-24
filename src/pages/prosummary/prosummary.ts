@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { EduPage } from "../edu/edu";
 
 /**
  * Generated class for the ProsummaryPage page.
@@ -33,6 +34,9 @@ export class ProsummaryPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProsummaryPage');
+  }
+  MovetoNext(){
+    this.navCtrl.push(EduPage);
   }
 
 }

@@ -39,18 +39,18 @@ ngOnInit(){
  this.slides = [
           {
             title: "Rajshekhar Pampad",
-            description: "Who is he in these Billions!!!",
-            image: '/assets/images/Raj.JPG',
+            description: "Who is he among these Billions!!!",
+            image: './assets/images/Raj.JPG',
           },
           {
             title: "A Techie",
-            description:"Techy,Passionate,Live in Present, Learn From Past",
-            image: '/assets/images/SharePoint.png',
+            description:"Passionate about new Technology,Live in Present, Learn From Past",
+            image: './assets/images/Raj.JPG',
           },
           {
             title:"SharePoint Consultant",
             description:"Microsoft Certified Professional",
-            image: '/assets/images/Microsoft_logo.png',
+            image: './assets/images/Raj.JPG',
           }
         ];
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CertiPage } from "../certi/certi";
 
 /**
  * Generated class for the EduPage page.
@@ -20,5 +21,9 @@ export class EduPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EduPage');
   }
+  MovetoNext(){
+    this.navCtrl.push(CertiPage);
+  }
+
 
 }

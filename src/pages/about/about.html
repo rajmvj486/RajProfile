@@ -8,42 +8,34 @@
 </ion-header>
 
 <ion-content padding>
-  <h4>A Tech Guy</h4>
-  <button ion-button primary (click)="AudioPlay()">Play</button>
-  <ion-list>
-
-  <ion-item *ngFor="let p of proSummary">
-     <ion-icon style="padding-right:10px" name="cube"></ion-icon>
-   {{p.title}}  
-  </ion-item>
-  </ion-list>
-  <ion-card *ngFor="let p of proSummary">
+   <div style="line-height:1em;">
+    <blockquote style="margin:0">
+    <p style="font-style:italic;font-weight: 500;text-align:center">Put your heart, mind, and soul into even your smallest acts. This is the secret of success.</p>
+    <pre style="padding-left:60%;font-size: 12px;"> - Swami Sivananda</pre>
+</blockquote>
+    </div>
+  
+      <ion-card style="background:transparent;text-align:center">
+  <img [src]="rajUrl"  class="custom-about-avatar"/>
   <ion-card-content>
-   <ion-icon style="padding-right:10px" name="cube"></ion-icon>
-   {{p.title}}  
+    <ion-card-title style="color:white">
+    Hey...
+      </ion-card-title>
+    <p style="color:white">
+    <i class="fa fa-shield" aria-hidden="true"></i>	I am <b>Rajshekhar Pampad</b>, a Microsoft Certified Professional from Karnataka, India.Currently working as Consultant at Capgemini technology services India Ltd,Bangalore. Passionate about learning evolving new technology. Love to blog,develop hybrid apps,web applications, Live in Present, Learn from Past.
+ 
+
+    </p>
   </ion-card-content>
-
 </ion-card>
- <div style="line-height: 1.75em;" *ngFor="let p of proSummary">
-   
-  </div>
-  <!-- Real floating action button, fixed. It will not scroll with the content -->
-  <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
-    <ion-fab-list>
-      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
-    </ion-fab-list>
-  </ion-fab>
 
-  <ion-fab right bottom>
-    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
-    <ion-fab-list side="left">
-      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+
+    <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="md-share"></ion-icon></button>
+    <ion-fab-list side="top">
+       <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
       <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-linkedin"></ion-icon></button>
       <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
     </ion-fab-list>
   </ion-fab>

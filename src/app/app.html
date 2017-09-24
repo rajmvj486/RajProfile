@@ -8,17 +8,17 @@
     <img [src]="rajUrl" width="" class="custom-avatar"/>
     <h5>Rajshekhar Pampad</h5>
     <h6>Consultant at Capgemini</h6>
-    <h6>Bangalore,Karnataka</h6>
-    <h6>India</h6>
+    <i style="color:white" class="fa fa-map-marker" aria-hidden="true"></i><h6 style="margin-top:1px">Bangalore,India</h6>
+    
   </ion-title>
    
    
 
-  <ion-list padding>
-      <a href="#" class="sideProfile" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        <i style="padding-right:2px" class="fa fa-{{p.iconName}} {{p.color}}" aria-hidden="true"></i>
+  <ion-list style="padding-top:10px;border-top: 1px solid #00c7ff;">
+      <div href="#" class="sideProfile" style="color: white; font-weight:500" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <i [style.padding-right]="p.padVal" class="fa fa-{{p.iconName}} {{p.color}}" aria-hidden="true"></i>
           {{p.title}}
-      </a>
+      </div>
     </ion-list>
 </ion-content>
  
