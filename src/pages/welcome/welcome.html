@@ -8,15 +8,23 @@
       <button ion-button clear (click)="startApp()"  style="color:white">Skip</button>
     </ion-buttons> 
   <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)">
-    <ion-slide *ngFor="let slide of slides">
-      <img style="margin-top:20%" [src]="slide.image"  class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
-      <p [innerHTML]="slide.description"></p>
+    <ion-slide>
+      <img style="margin-top:30%" src="./assets/images/RajPic.jpg"  class="slide-image" />      
+      <h2 class="slide-title">Who is he among these Billions!!!</h2>
     </ion-slide>
     <ion-slide>
-      <img  style="margin-top:30%"  src="./assets/images/Raj.JPG" class="slide-image custom-avatar"  />
-      <h2 class="slide-title">Ready to Explore My Profile</h2>
-      <button ion-button icon-end large clear (click)="startApp()" style="color:white">
+     <h2 style="margin-top:50%"  class="slide-title">A Techie</h2>
+      <p>Passionate about new Technology, Live in Present, Learn From Past</p>
+    </ion-slide>
+  
+    <ion-slide>
+     <h2 style="margin-top:50%" class="slide-title">SharePoint Consultant</h2>
+      <p>Microsoft Certified Professional Developer</p>
+    </ion-slide>
+    <ion-slide>
+      
+      <h2 style="margin-top:60%" class="slide-title">Ready to Explore My Profile</h2>
+      <button ion-button icon-end round outline (click)="startApp()" style="color:white">
        Continue
         <ion-icon name="arrow-forward"></ion-icon>
       </button>

@@ -74,13 +74,18 @@
    <ion-icon style="padding-right:10px" name="cube"></ion-icon>
    {{ Project.pdesc.value }}
   </ion-card-content>
+  <ion-card-content *ngFor="let psub of Project.pdesc.subvalue">
+
+    <ion-icon name="md-flower"></ion-icon> {{psub}}
+  
+  </ion-card-content>
 
 </ion-card>
 
 <h5>{{Project.roles.title}}</h5>
     <ion-card>
   <ion-card-content *ngFor="let p of Project.roles.value">
-   <ion-icon style="padding-right:10px" name="star"></ion-icon>
+   <ion-icon style="padding-right:10px" name="ios-leaf"></ion-icon>
    {{ p }}
   </ion-card-content>
 </ion-card>

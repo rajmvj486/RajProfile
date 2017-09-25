@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams, LoadingController,AlertController } from 'ionic-angular';
+import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AppService } from "../../service/app.service";
-import { Network } from '@ionic-native/network';
+
 
 
 
@@ -23,32 +23,14 @@ export class SkillsPage implements OnInit {
  ErrorMessage:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private _appservice: AppService,public loadingCtrl: LoadingController,
-    private network: Network, public alertCtrl:AlertController) {  
+    private _appservice: AppService,public loadingCtrl: LoadingController) {  
      
   }
-
+   
   ionViewDidLoad() {
     console.log('ionViewDidLoad SkillsPage');
   
-     let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
-  console.log('network was disconnected :-(');
-   let alert = this.alertCtrl.create({
-                title: "Connection Status",
-                subTitle: "Please connect with Internet to view Updated Skill",
-           buttons: [
-        {
-          text: 'OK',
-          handler: () => {
-            console.log('Disagree clicked');
-
-// stop disconnect watch
-disconnectSubscription.unsubscribe();
-          }
-        }]
-                  });
-            alert.present();
-});
+     
   }
   
  ngOnInit() {
@@ -73,4 +55,6 @@ disconnectSubscription.unsubscribe();
  SkillBubble() {
    alert("You tapped on Me");
  }
+
+
 }

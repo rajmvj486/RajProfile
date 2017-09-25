@@ -32,7 +32,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'About Me', component: AboutPage, iconName: 'user-circle',color:'faWhite',padVal:'10px' },
-      { title: 'Professional Overview', component: ProsummaryPage, iconName: 'user-circle',color:'faWhite',padVal:'10px' },
+      { title: 'Professional Overview', component: ProsummaryPage, iconName: 'cog',color:'faWhite',padVal:'10px' },
       { title: 'Education', component: EduPage, iconName:'graduation-cap',color:'faWhite',padVal:'8px' },
       { title: 'Certification', component: CertiPage, iconName:'certificate',color:'faOrange',padVal:'12px'},
       { title: 'Skills', component: SkillsPage,iconName:'laptop',color:'faWhite',padVal:'10px' },
