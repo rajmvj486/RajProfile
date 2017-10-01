@@ -73,12 +73,16 @@
   <ion-card-content>
    <ion-icon style="padding-right:10px" name="cube"></ion-icon>
    {{ Project.pdesc.value }}
+    <p style="color:white;padding-left:10px"  *ngFor="let psub of Project.pdesc.subvalue">
+     - {{psub}}
+  </p>
   </ion-card-content>
-  <ion-card-content *ngFor="let psub of Project.pdesc.subvalue">
+ 
+  <!-- <ion-card-content *ngFor="let psub of Project.pdesc.subvalue">
 
-    <ion-icon name="md-flower"></ion-icon> {{psub}}
+    <ion-icon style="padding-right:10px" name="md-leaf"></ion-icon> {{psub}}
   
-  </ion-card-content>
+  </ion-card-content> -->
 
 </ion-card>
 

@@ -22,6 +22,7 @@ export interface Slide {
 export class WelcomePage implements OnInit {
   showSkip: boolean =true;
 slides: Slide[];
+rajUrl:string="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkIAAAAJDI3NTIxZjRjLWM1ZTEtNDUxNC04YWJlLWQ0NTBmZDc5MjIzNw.jpg";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     
   }
@@ -39,12 +40,12 @@ ngOnInit(){
  this.slides = [
           {
             title: "Rajshekhar Pampad",
-            description: "Who is he among these Billions!!!",
+            description: "Who is he !!!",
             image: './assets/images/Raj.JPG',
           },
           {
             title: "A Techie",
-            description:"Passionate about new Technology,Live in Present, Learn From Past",
+            description:"Passionate About New Technology",
             image: './assets/images/Raj.JPG',
           },
           {

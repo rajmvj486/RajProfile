@@ -37,7 +37,7 @@ export class SkillsPage implements OnInit {
 
    let loader = this.loadingCtrl.create({
     content: 'Getting Updated Skills...',
-     duration: 3000,
+     duration: 2000,
   });
 
   loader.present().then(() => {

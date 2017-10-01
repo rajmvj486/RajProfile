@@ -28,7 +28,7 @@ export class WorkPage implements OnInit{
    ngOnInit(){
       let loader = this.loadingCtrl.create({
     content: 'Getting latest Projects...',
-     duration: 3000,
+     duration: 2000,
   });
 
   loader.present().then(() => {

@@ -4,8 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { CallNumber } from '@ionic-native/call-number';
 import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AboutPage } from "../pages/about/about";
@@ -18,12 +16,10 @@ import { ProjectDetailPage } from "../pages/projectdetail/projectdetail";
 import { ProsummaryPage } from "../pages/prosummary/prosummary";
 import { WelcomePage } from "../pages/welcome/welcome";
 import { Network } from "@ionic-native/network";
-
+import { EmailComposer } from '@ionic-native/email-composer';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
     AboutPage,
     EduPage,
     CertiPage,
@@ -43,8 +39,6 @@ ContactPage
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage,
     AboutPage,
     EduPage,
     WelcomePage,
@@ -60,6 +54,7 @@ ContactPage
     StatusBar,
     SplashScreen,
     CallNumber,
+    EmailComposer,
     Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
