@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 import { AboutPage } from "../about/about";
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 /**
  * Generated class for the WelcomePage page.
@@ -21,15 +22,22 @@ export interface Slide {
 })
 export class WelcomePage implements OnInit {
   showSkip: boolean =true;
+  splash = true;
 slides: Slide[];
-rajUrl:string="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkIAAAAJDI3NTIxZjRjLWM1ZTEtNDUxNC04YWJlLWQ0NTBmZDc5MjIzNw.jpg";
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,  public _SplashScreen: SplashScreen, public platform:Platform) {
+    this.platform.ready().then(() => {
+      setTimeout(() => {
+        this._SplashScreen.hide();
+      }, 100);
+    });
+   
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
   }
+  
     startApp() {
     this.navCtrl.setRoot(AboutPage, {}, {
       animate: true,

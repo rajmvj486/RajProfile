@@ -1,4 +1,13 @@
 page-welcome {
+  .custom-about-avatar {
+    height: 15vw;
+    width: 15vw;
+    border: 1px solid #3ebffb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
  .toolbar-background {
     background: transparent;
     border-color: transparent;
@@ -47,4 +56,50 @@ page-welcome {
     }
   }
 
+}
+#custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-color: #002a3e;
+}
+
+.flb {
+  background:linear-gradient(to bottom right, #00c7ff, rgba(239, 17, 221, 0.79))!important;
+  height:100%;
+  width:100%;
+  animation: pulse 1s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+#custom-overlay img {
+  display: inherit;
+  margin: 0 auto;
+  width:50%;
+  height: auto;
+  animation: animation 3100ms linear infinite both;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }

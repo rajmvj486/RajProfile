@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AppService } from "../../service/app.service";
 import { ProjectDetailPage } from "../projectdetail/projectdetail";
+import { AboutPage } from '../about/about';
+import { ContactPage } from '../contact/contact';
 
 /**
  * Generated class for the WorkPage page.
@@ -16,8 +18,9 @@ import { ProjectDetailPage } from "../projectdetail/projectdetail";
 })
 export class WorkPage implements OnInit{
   Projects: any[];
+  showInternetError:boolean=false;
   ErrorMessage: any;
-
+  btnShowLoaded:boolean=false;
   constructor(public navCtrl: NavController, public navParams: NavParams,
   private _appservice: AppService,public loadingCtrl: LoadingController) {
   }
@@ -36,8 +39,12 @@ export class WorkPage implements OnInit{
        proj=> {
          loader.dismiss();
          this.Projects =proj
+         this.btnShowLoaded =true;
        },
-       error=>this.ErrorMessage = error
+       error=>{
+         this.ErrorMessage = error;
+         this.showInternetError = true;
+       }
      )
     
   });
@@ -45,5 +52,13 @@ export class WorkPage implements OnInit{
    }
   goProjectDetail($event, p){
     this.navCtrl.push(ProjectDetailPage,p);
+  }
+
+  MovetoAbout(){
+    this.navCtrl.setRoot(AboutPage);
+    this.navCtrl.popToRoot();
+  }
+  MovetoNext(){
+    this.navCtrl.push(ContactPage);
   }
 }

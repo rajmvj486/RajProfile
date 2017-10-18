@@ -17,6 +17,7 @@ import { ProsummaryPage } from "../pages/prosummary/prosummary";
 import { WelcomePage } from "../pages/welcome/welcome";
 import { Network } from "@ionic-native/network";
 import { EmailComposer } from '@ionic-native/email-composer';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -27,8 +28,8 @@ import { EmailComposer } from '@ionic-native/email-composer';
     WelcomePage,
     ProsummaryPage,
     ProjectDetailPage,
-WorkPage,
-ContactPage
+    WorkPage,
+    ContactPage
 
   ],
   imports: [

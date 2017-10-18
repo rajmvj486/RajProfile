@@ -3,7 +3,15 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Skills</ion-title>
+
+<ion-buttons right>
+  <button ion-button icon-only (click)="MovetoAbout()">
+    <img src="./assets/images/rajUrl.jpg" style="float:right;" class="custom-about-avatar"/>
+  </button>
+  </ion-buttons>
+
+    <ion-title>Skills
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -21,4 +29,14 @@
     </p>
   </ion-card-content>
 </ion-card>
+<ion-card *ngIf="showInternetError">
+  <ion-card-content>
+  <p>Please check your Internet Connection!</p>
+</ion-card-content>
+</ion-card>
+<div text-center *ngIf="btnShowLoaded">
+  <button ion-button round  (click)="MovetoNext()" class="NextMove">
+    <ion-icon  faWhite name="arrow-forward"></ion-icon>
+  </button>
+</div>
 </ion-content>

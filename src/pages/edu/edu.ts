@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { CertiPage } from "../certi/certi";
+import { AboutPage } from '../about/about';
+import { CertiPage } from '../certi/certi';
+
 
 /**
  * Generated class for the EduPage page.
@@ -14,12 +16,16 @@ import { CertiPage } from "../certi/certi";
   templateUrl: 'edu.html',
 })
 export class EduPage {
-
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EduPage');
+  }
+  MovetoAbout(){
+    this.navCtrl.setRoot(AboutPage);
+    this.navCtrl.popToRoot();
   }
   MovetoNext(){
     this.navCtrl.push(CertiPage);

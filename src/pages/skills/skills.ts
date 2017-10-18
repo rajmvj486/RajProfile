@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { AppService } from "../../service/app.service";
-
+import{AboutPage} from "../about/about";
+import { WorkPage } from '../work/work';
 
 
 
@@ -17,7 +18,9 @@ import { AppService } from "../../service/app.service";
   templateUrl: 'skills.html',
 })
 export class SkillsPage implements OnInit {
- 
+  showInternetError: boolean = false;
+  btnShowLoaded: boolean = false;
+
  SkillSet:Array<{title:string, skills:string[]}>;
  Skills:any;
  ErrorMessage:string;
@@ -32,7 +35,10 @@ export class SkillsPage implements OnInit {
   
      
   }
-  
+  MovetoAbout(){
+    this.navCtrl.setRoot(AboutPage);
+    this.navCtrl.popToRoot();
+  }  
  ngOnInit() {
 
    let loader = this.loadingCtrl.create({
@@ -46,15 +52,20 @@ export class SkillsPage implements OnInit {
         prod =>{
           this.SkillSet = prod;
           loader.dismiss();
+         this.btnShowLoaded = true;
         },
-        error=>this.ErrorMessage = <any>error
+        error=>{
+          this.ErrorMessage = <any>error;
+          this.showInternetError = true;        
+        }
       );
   
   });
   }
- SkillBubble() {
-   alert("You tapped on Me");
- }
+  
+  MovetoNext(){
+    this.navCtrl.push(WorkPage);
+  }
 
 
 }

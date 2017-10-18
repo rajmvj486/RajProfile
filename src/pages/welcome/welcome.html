@@ -1,15 +1,22 @@
-
-  
+<!-- <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
     
+    <img style="text-align:center;" src="./assets/icon/R.png" class="custom-about-avatar"/>
   
-
+  
+  
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div> -->
 <ion-content no-bounce>
    <ion-buttons end *ngIf="showSkip">
       <button ion-button clear (click)="startApp()"  style="color:white">Skip</button>
     </ion-buttons> 
   <ion-slides pager="true" (ionSlideWillChange)="onSlideChangeStart($event)">
     <ion-slide>
-      <img style="margin-top:30%" [src]="rajUrl"  class="slide-image" />      
+        <img style="margin-top:30%" src="./assets/images/rajUrl.jpg" class="slide-image"/>
+    
       <h2 class="slide-title">Who is He !!!</h2>
     </ion-slide>
     <ion-slide>

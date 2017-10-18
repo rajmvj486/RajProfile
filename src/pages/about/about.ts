@@ -17,8 +17,6 @@ import { NavController, NavParams } from 'ionic-angular';
 
 export class AboutPage {
    //nativePath:string;
- rajUrl:string ="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkIAAAAJDI3NTIxZjRjLWM1ZTEtNDUxNC04YWJlLWQ0NTBmZDc5MjIzNw.jpg";
- 
   proSummary:Array<{title:string}>;
 
   constructor(public navCtrl: NavController,
@@ -40,7 +38,6 @@ export class AboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
-   
   }
    
 //   MusicPlay(){
@@ -56,7 +53,7 @@ export class AboutPage {
 //   })
 //   .catch(e => console.log(e));
 //   }
-   AudioPlay(){
+   //AudioPlay(){
      
 //     // this.pathAlone = this.nativePath.substring(8);
 //     this.file  = this.media.create('./assets/audio/Audio1.mp3');  
@@ -70,7 +67,8 @@ export class AboutPage {
 //     this.file.play();
 
     
-   }
+ //  }
 
 }
+
   

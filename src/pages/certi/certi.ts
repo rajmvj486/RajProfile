@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { AboutPage } from '../about/about';
+import { SkillsPage } from '../skills/skills';
 
 /**
  * Generated class for the CertiPage page.
@@ -22,5 +24,11 @@ export class CertiPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CertiPage');
   }
-
+  MovetoAbout(){
+    this.navCtrl.setRoot(AboutPage);
+    this.navCtrl.popToRoot();
+  }
+  MovetoNext(){
+    this.navCtrl.push(SkillsPage);
+  }
 }
